@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&family=Roboto+Slab:wght@700&display=swap");
+
+:root {
+	--font-main: "Nunito Sans", sans-serif;
+	--font-slab: "Roboto Slab", serif;
+
+	--contain-maxwidth: 80rem;
+	--contain-minmargin: min(4vw, 2rem);
+	--contain-padside: max(
+		var(--contain-minmargin),
+		calc(50vw - (var(--contain-maxwidth) / 2))
+	);
+
+	--color-blackish: #231d16;
+	--color-green: #bad982;
+	--color-blue: #35abd1;
+	--color-white: #ffffff;
+	--color-grey-darker: #333333;
+	--color-grey-inputbg: rgba(187, 189, 183, 0.1);
+	--color-grey-mid: rgb(187, 189, 183, 0.75);
+	--color-grey-middark: #666666;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: var(--font-main);
+}
+input,
+button,
+select,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+}
+
+.unlist {
+	list-style: outside none;
+	margin: 0;
+	padding: 0;
+}
+
+.contain {
+	padding-left: var(--contain-padside);
+	padding-right: var(--contain-padside);
+}
+.contain::after,
+.contain::before {
+	content: "";
+	display: table;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
