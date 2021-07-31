@@ -143,8 +143,8 @@ const Header: React.FC<HeaderProps> = ({ children, globals: { header } }) => {
           <div className="inner">
             <LogoTag className="logo">
               <a href="#">
-                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="50" cy="50" r="50" />
+                <svg viewBox="0 0 146 72" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="72" cy="146" r="146" fill="currentColor" />
                 </svg>
               </a>
             </LogoTag>
